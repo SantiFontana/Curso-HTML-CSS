@@ -30,7 +30,7 @@ form {
     padding: 6px 20px;
 }
 
-input, textarea {
+input, textarea, select{
     width: 100%;
     box-sizing: border-box;
     padding: 6px 8px;
@@ -40,6 +40,10 @@ input, textarea {
     background-color: transparent;
     border-radius: 4px;
     color: #ddd;
+}
+
+option {
+    background-color: #222;
 }
 
 textarea {

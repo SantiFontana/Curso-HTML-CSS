@@ -9,21 +9,46 @@
 <body>
     <form>
         <h2>Formulario de contacto</h2>
+
         <div class="form_input">
             <label for="nombre">Nombre completo
                 <input type="text" placeholder="Nina" id="nombre">
             </label>
         </div>
+
         <div class="form_input">
             <label for="email">Email
                 <input type="email" placeholder="ejemplo@gmail.com" id="email">
             </label>
         </div>
+
+        <div class="form_input">
+            <label>Tipo de usuario
+                <select name="type-of-user">
+                    <option value="user1">Seguidor/a</option>
+                    <option value="user2">Empresa</option>
+                    <option value="user3">Otros</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="form_input">
+            <label>Referente
+                <input list="referente" name="referente">
+                <datalist id="referente" name="type-of-user">
+                    <option value="Nina">Pepa</option>
+                    <option value="Una empresa">Una empresa del rubro IT</option>
+                    <option value="Un amigo">Me recomendó</option>
+                </datalist>
+            </label>
+        </div>
+
         <div class="form_input">
             <label for="mensaje">Mensaje
                 <textarea rows="9" placeholder="Deja tu mensaje..." id="mensaje"></textarea>
             </label>
         </div>
+
         <div class="form_input">
             <label>Acepto los terminos y condiciones
                 <input class="checkbox" type="checkbox" name="" id="">
