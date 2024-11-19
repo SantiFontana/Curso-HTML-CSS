@@ -4,24 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Textarea y Labels</title>
-    <link rel="stylesheet" href="textarea-labels.css">
+    <link rel="stylesheet" href="textarea-labels-select.css">
 </head>
 <body>
     <form>
         <h2>Formulario de contacto</h2>
-
-        <div class="form_input">
-            <label for="nombre">Nombre completo
-                <input type="text" placeholder="Nina" id="nombre">
+        
+        <fieldset>
+        <legend>INFORMACIÓN BÁSICA</legend>
+            <div class="form_input">
+                <label for="nombre">Nombre completo
+                <input type="text" placeholder="Juan Pérez" id="nombre" required>
             </label>
         </div>
 
         <div class="form_input">
             <label for="email">Email
-                <input type="email" placeholder="ejemplo@gmail.com" id="email">
+                <input type="email" placeholder="ejemplo@gmail.com" id="email" required>
             </label>
         </div>
 
+        <div class="form_input">
+            <label for="asunto">Asunto
+                <input type="text" placeholder="El asunto de tu mensaje" id="asunto" required>
+            </label>
+        </div>
+        </fieldset>
         <div class="form_input">
             <label>Tipo de usuario
                 <select name="type-of-user">
@@ -36,7 +44,7 @@
             <label>Referente
                 <input list="referente" name="referente">
                 <datalist id="referente" name="type-of-user">
-                    <option value="Nina">Pepa</option>
+                    <option value="Santiago">Un programador</option>
                     <option value="Una empresa">Una empresa del rubro IT</option>
                     <option value="Un amigo">Me recomendó</option>
                 </datalist>
@@ -45,14 +53,18 @@
 
         <div class="form_input">
             <label for="mensaje">Mensaje
-                <textarea rows="9" placeholder="Deja tu mensaje..." id="mensaje"></textarea>
+                <textarea rows="9" placeholder="Deja tu mensaje..." id="mensaje" required></textarea>
             </label>
         </div>
 
         <div class="form_input">
             <label>Acepto los terminos y condiciones
-                <input class="checkbox" type="checkbox" name="" id="">
+                <input class="checkbox" type="checkbox" name="" id="" required>
             </label>
+        </div>
+
+        <div class="form_input">
+                <input type="submit" placeholder="El asunto de tu mensaje" id="asunto">
         </div>
     </form>
 </body>

@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: sans-serif;
     color: #ddd;
-    background-color: #222;
+    background: linear-gradient(to bottom, #333, #000)
 }
 
 h2 {
@@ -24,10 +24,11 @@ form {
     margin-top: 50px;
     border-radius: 8px;
     font-size: 16px;
+    margin-bottom: 50px;
 }
 
 .form_input {
-    padding: 6px 20px;
+    padding: 2px 20px;
 }
 
 input, textarea, select{
@@ -61,4 +62,22 @@ label {
 .checkbox {
     width: auto;
     height: auto;
+}
+
+fieldset {
+    border-radius: 5px;
+    border: 1px solid #666;
+    padding: 8px 6px 20px 10px;
+    margin: 20px;
+}
+
+legend {
+    padding: 0 6px;
+    color: #bbb
+}
+
+[type = "submit"] {
+    background-color: #999;
+    color: #222;
+    min-height: 38px;
 }
