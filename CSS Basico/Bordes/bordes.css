@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+}
+
+.texto {
+    background: red;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+
+.texto {
+    border: 2px solid white;
+    border-radius: 4px 10px 50px 10px;
+    border-top: 4px solid yellowgreen;
+}
+
+input {
+    display: block;
+    margin: 5px;
+    padding: 6px 9px;
+    border: none;
+    border-bottom: 1px solid greenyellow;
+    background: transparent;
+    color: greenyellow;
+}

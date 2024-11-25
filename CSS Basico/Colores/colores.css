@@ -1,0 +1,15 @@
+.box {
+    width: 150px;
+    height: 150px;
+    background: rgb(0, 255, 221);
+    background: #238537;
+    margin: auto;
+    text-align: center;
+    border-top: 6px solid rgb(140, 240, 11);
+    box-sizing: border-box;
+}
+
+p {
+    padding: 50px 50px;
+    color: rgb(140, 240, 11);
+}
