@@ -1,0 +1,23 @@
+body {
+    background-color: #ee0000;
+    margin: 0;
+}
+
+.box {
+    width: 300px;
+    height: 400px;
+    background: radial-gradient(transparent, #0009);
+    margin: 0;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 5px solid #550000;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
