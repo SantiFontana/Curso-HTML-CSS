@@ -1,0 +1,46 @@
+/* SELECTORES POR ATRIBUTO */
+
+img[src="../../Formulario Responsive/correo.png"] {
+    width: 100%;
+}
+
+img[src^="../"] {
+    width: 100%;
+}
+
+
+img[src$="png"] {
+    width: 100%;
+}
+
+img[src^="correo"] {
+    width: 100%;
+}
+
+/* SELECTOR DESCENDIENTE */
+
+ul li {
+    color: #00f;
+}
+
+/* SELECTOR POR HIJO DIRECTO */
+
+li > strong {
+    color: #f00;
+}
+
+/* SELECTOR DE HERMANO ADYACENTE */
+
+h1 + p + p + ul{
+    background-color: #0f0;
+}
+
+/* SELECTOR DE HERMANOS GENERALES */
+
+h1 ~ p {
+    color: #0f0;
+}
+
+h1, p {
+    background-color: #a0f;
+}

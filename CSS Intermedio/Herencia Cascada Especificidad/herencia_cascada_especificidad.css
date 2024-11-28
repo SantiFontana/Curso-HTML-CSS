@@ -1,0 +1,15 @@
+#titulo {
+    color: #0f0;
+}
+
+.titulo {
+    color: #f00;
+}
+
+body .titulo {
+    color: #00f !important;
+}
+
+h1 {
+    color: #a0f !important;
+}

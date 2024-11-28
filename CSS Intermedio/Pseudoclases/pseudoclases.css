@@ -1,0 +1,126 @@
+/* SELECCIONANDO EL ELEMENTO RAÍZ */
+
+:root {
+    color: #f0f;
+}
+
+h1 {
+    color: #48e;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+label {
+    color: #fff;
+    font-weight: bold;
+}
+
+div {
+    padding: 20px;
+}
+
+/* CUANDO SE PASA EL MOUSE POR ENCIMA DEL H1 */
+
+h1:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* MIENTRAS SE ESTE CLICKEANDO EL H1 */
+
+h1:active {
+    background-color: #f0f;
+    color: #6fe;
+}
+
+/* SELECCIONANDO EL PRIMER LI */
+
+li:first-child {
+    color: #00f;
+}
+
+/* SELECCIONANDO EL SEGUNDO LI */
+
+li:nth-of-type(2) {
+    color: #6fe;
+}
+
+/* SELECCIONANDO UN LI SI Y UN LI NO */
+
+li:nth-child(2n) {
+    color: #6fe;
+}
+
+/* SELECCIONANDO EL ÚLTIMO LI */
+
+li:last-child {
+    color: #f00;
+}
+
+/* SELECCIONANDO LOS LI DENTRO DE ".LISTA" 
+QUE NO TENGAN LA CLASE "EXCLUIR" */
+
+.lista li:not(.excluir) {
+    color: #f00;
+}
+
+/* SELECCIONANDO EL DIV EN CASO DE ESTAR VACÍO */
+
+div:empty {
+    background-color: #0f0;
+    padding: 30px;
+}
+
+/* SELECCIONANDO EL INPUT DESPUES DE HABERSE CLICKEADO */
+
+input[type="checkbox"] {
+    margin: 50px;
+}
+
+input[type="checkbox"]:checked {
+    margin: 0;
+}
+
+/* SELECCIONANDO ENLACES NO VISITADOS */
+
+a:link {
+    color: #f00;
+}
+
+/* SELECCIONANDO ENLACES VISITADOS */
+
+a:visited {
+    color: #0f0;
+}
+
+/* SELECCIONANDO INPUTS INVALIDOS */
+
+label:has(input:invalid), input:invalid {
+    color: #f00;
+}
+
+/* SELECCIONANDO INPUTS VALIDOS */
+
+label:has(input:valid), input:valid {
+    color: #0f0;
+}
+
+/*WHERE, IS, HAS */
+
+/*IS CAMBIA LA ESPECIFICIDAD Y WHERE NO*/
+
+.elemento1,
+.elemento2,
+.elemento3 {
+    color: #00f;
+}
+
+section :is(.elemento1, .elemento2, .elemento3) {
+    color: #00f;
+}
+
+/*HAS CAMBIA LA PROPIEDAD SI TIENE EL ELEMENTO*/
+
+section:has(.elemento1) {
+    background-color: #000;
+}
