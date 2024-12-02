@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    background-color: #f00;
+    margin-top: 50px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    transition-property: left;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition: left 1s cubic-bezier(0.17, 0.36, 0.9, 0.45) 1s;
+    color: red;
+    position: relative;
+    left: 0;
+}
+
+body:hover .box {
+    background-color: #00f;
+    left: 400;
+}
