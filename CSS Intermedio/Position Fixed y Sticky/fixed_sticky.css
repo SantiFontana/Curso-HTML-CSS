@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.contenedor {
+    padding: 150px;
+    background-color: #00f;
+    position: relative;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.box {
+    height: 60px;
+    width: 200px;
+    background-color: #f00;
+    position: fixed;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-right: 0;
+    box-shadow: 0 0 40px #0009;
+    z-index: 30;
+}
+
+.box-sticky {
+    height: 60px;
+    width: 200px;
+    background-color: #f00;
+    position: sticky;
+    top: 100px;
+    z-index: 40px;
+    box-sizing: border-box;
+}
+
+.first {
+    top: 30px;
+}
+
+.second {
+    top: 120px;
+}
+
+.last {
+    top: 200px
+}
