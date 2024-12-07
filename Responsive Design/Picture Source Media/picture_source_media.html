@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Source Media</title>
+    <link rel="stylesheet" href="picture_source_media.css">
+</head>
+<body>
+    <picture>
+        <source type="image.webp" srcset="Logo.webp">
+        <source media="(max-width: 500px)" srcset="La-atajada.png">
+        <source media="(max-width: 300px)" srcset="Logo.png">
+        <img src="Logo.png" alt="Logo">
+    </picture>
+</body>
+</html>
