@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.crecedor {
+    height: 100vh;
+}
+
+.box {
+    height: 400px;
+    background-color: #48e;
+    padding: 20px;
+    view-timeline: --cajita block;
+    animation: llenar-barra both;
+    animation-timeline: --cajita;
+    animation-timing-function: linear;
+    animation-range-start: cover -10% ;
+    animation-range-end: contain 40%;
+}
+
+.container {
+    
+}
+
+@keyframes llenar-barra {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
